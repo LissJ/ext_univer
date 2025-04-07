@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="title">Desafio Identifique o Link!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 data-i18n="headerTitle">Desafio Identifique o Link!</h1>
+        <p data-i18n="headerSubtitle">Aprenda a identificar links maliciosos e ajude a proteger nosso planeta digital!
+        </p>
+        <!-- Seletor de idioma -->
+        <select id="languageSelect">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+        </select>
+    </header>
+
+    <!-- Medidor de Pegada de Carbono -->
+    <div class="meter-container">
+        <div class="meter" id="carbonMeter"></div>
+    </div>
+
+    <!-- Lista de Emails (estilo Gmail) -->
+    <div class="email-list" id="emailList"></div>
+
+    <!-- Modal: Pop-up de erro (link errado) -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <h2 data-i18n="errorTitle">Atenção!</h2>
+            <p data-i18n="errorText">Ops, você clicou no link errado!</p>
+        </div>
+    </div>
+
+    <!-- Modal: Quiz Digital -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <h2 data-i18n="quizTitle">Quiz Digital</h2>
+            <p id="quizQuestion"></p>
+            <div id="quizOptions"></div>
+            <button class="close-btn" id="closeQuiz" style="display:none;">Fechar Quiz</button>
+        </div>
+    </div>
+
+    <!-- Modal: Pop-up aleatório simulando um email malicioso -->
+    <div id="randomPopup" class="modal">
+        <div class="modal-content">
+            <h2 data-i18n="popupTitle">Email Suspeito</h2>
+            <p id="randomPopupText"></p>
+        </div>
+    </div>
+
+    <!-- Mensagem de Game Over -->
+    <div id="gameOverMessage" class="game-over" style="display:none;">
+        <h2 data-i18n="gameOverTitle">Game Over!</h2>
+        <p data-i18n="gameOverText">A pegada de carbono atingiu níveis críticos. Pratique boas ações digitais para
+            evitar o caos!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

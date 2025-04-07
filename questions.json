@@ -1,0 +1,127 @@
+{
+    "questions": [
+        {
+            "pt": {
+                "question": "O que ajuda a manter a internet segura?",
+                "options": [
+                    {
+                        "text": "Compartilhar senhas com amigos",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Usar senhas fortes e secretas",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "en": {
+                "question": "What helps keep the internet safe?",
+                "options": [
+                    {
+                        "text": "Sharing passwords with friends",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Using strong and secret passwords",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "es": {
+                "question": "¿Qué ayuda a mantener internet seguro?",
+                "options": [
+                    {
+                        "text": "Compartir contraseñas con amigos",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Usar contraseñas fuertes y secretas",
+                        "isCorrect": true
+                    }
+                ]
+            }
+        },
+        {
+            "pt": {
+                "question": "Como cuidar do nosso planeta digital?",
+                "options": [
+                    {
+                        "text": "Clicar em links duvidosos",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Verificar se o link é seguro",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "en": {
+                "question": "How do you take care of our digital planet?",
+                "options": [
+                    {
+                        "text": "Clicking on suspicious links",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Checking if the link is safe",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "es": {
+                "question": "¿Cómo cuidar nuestro planeta digital?",
+                "options": [
+                    {
+                        "text": "Hacer clic en enlaces sospechosos",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Verificar si el enlace es seguro",
+                        "isCorrect": true
+                    }
+                ]
+            }
+        },
+        {
+            "pt": {
+                "question": "Qual ação protege seu computador?",
+                "options": [
+                    {
+                        "text": "Ignorar atualizações",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Manter o antivírus atualizado",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "en": {
+                "question": "Which action protects your computer?",
+                "options": [
+                    {
+                        "text": "Ignoring updates",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Keeping antivirus updated",
+                        "isCorrect": true
+                    }
+                ]
+            },
+            "es": {
+                "question": "¿Qué acción protege tu computadora?",
+                "options": [
+                    {
+                        "text": "Ignorar las actualizaciones",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Mantener el antivirus actualizado",
+                        "isCorrect": true
+                    }
+                ]
+            }
+        }
+    ]
+}
