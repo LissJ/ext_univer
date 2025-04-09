@@ -1,0 +1,12 @@
+{
+    "gameTitle": "Juego de Seguridad Digital",
+    "safeText": "Seguro",
+    "unsafeText": "No Seguro",
+    "quizQuestionExample": "¿Qué hace que un enlace sea seguro?",
+    "quizAnswerA": "Es de un sitio confiable",
+    "quizAnswerB": "Muestra muchos pop-ups",
+    "quizAnswerC": "Tiene anuncios extraños",
+    "quizAnswerD": "Siempre redirige a otra página",
+    "endGameTitle": "Juego Terminado"
+  }
+  

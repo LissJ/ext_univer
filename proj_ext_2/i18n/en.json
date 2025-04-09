@@ -1,0 +1,12 @@
+{
+    "gameTitle": "Digital Security Game",
+    "safeText": "Safe",
+    "unsafeText": "Unsafe",
+    "quizQuestionExample": "What makes a link safe?",
+    "quizAnswerA": "It comes from a trusted website",
+    "quizAnswerB": "It shows many pop-ups",
+    "quizAnswerC": "It has strange ads",
+    "quizAnswerD": "It always redirects to another page",
+    "endGameTitle": "Game Over"
+  }
+  

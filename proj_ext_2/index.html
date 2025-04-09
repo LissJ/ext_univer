@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Segurança Digital - Estilo Gmail</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho estilo Gmail -->
+    <header class="gmail-header">
+        <div class="header-left">
+            <button class="menu-btn">&#9776;</button>
+            <img src="assets/images/gmail-logo.png" alt="Logo Estilo Gmail" class="gmail-logo" />
+        </div>
+        <div class="header-center">
+            <input type="text" class="search-bar" placeholder="Search mail" />
+            <button class="search-btn">&#128269;</button>
+        </div>
+        <div class="header-right">
+            <button class="icon-btn">&#128276;</button> <!-- Notificações -->
+            <button class="icon-btn">&#128100;</button> <!-- Perfil -->
+        </div>
+    </header>
+
+    <!-- Abas (Primary, Promotions, Social) -->
+    <nav class="gmail-tabs">
+        <ul>
+            <li class="active-tab">Primary</li>
+            <li>Promotions</li>
+            <li>Social</li>
+            <li>Updates</li>
+        </ul>
+    </nav>
+
+    <!-- Container principal com sidebar e conteúdo -->
+    <div class="main-container">
+        <!-- Barra lateral esquerda (Labels) -->
+        <aside class="sidebar">
+            <ul>
+                <li class="active">Inbox</li>
+                <li>Starred</li>
+                <li>Snoozed</li>
+                <li>Sent</li>
+                <li>Drafts</li>
+                <li>More</li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal (lista de links simulando e-mails) -->
+        <main class="emails-list">
+            <ul class="link-list">
+                <!-- Cada item representará o "e-mail" com link -->
+                <!-- Exemplo de item -->
+                <!--
+          Importante: Aqui entra a mecânica do jogo:
+          - Título ou remetente do link
+          - URL
+          - Botões "Seguro" / "Não Seguro"
+        -->
+                <li class="link-item">
+                    <div class="mail-info">
+                        <span class="sender">Site XYZ</span>
+                        <span class="subject-preview">Clique para ganhar prêmios</span>
+                        <span class="url">http://exemplo-malicioso.com</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn-safe" data-correct="false">Seguro</button>
+                        <button class="btn-unsafe" data-correct="true">Não Seguro</button>
+                    </div>
+                </li>
+                <!-- Repita para todos os links... -->
+            </ul>
+        </main>
+
+        <!-- (Opcional) Barra lateral direita para Chat ou algo similar ao Gmail -->
+        <!-- <aside class="right-sidebar">
+      <p>Chat / Hangouts / etc.</p>
+    </aside> -->
+    </div>
+
+    <!-- Barra de Pegada de Carbono (fica fixa) -->
+    <div class="carbon-meter" id="carbonMeter">
+        <img src="assets/images/folha-icon.png" alt="Ícone da Folha">
+        <div class="meter-bar" id="meterBar"></div>
+    </div>
+
+    <!-- Pop-up de erro “estranho” (fixo lateral) -->
+    <div class="pop-up-error" id="popUpError">
+        <p>Link malicioso detectado!</p>
+    </div>
+
+    <!-- Modal de Quiz -->
+    <div class="modal modal-quiz" id="modalQuiz">
+        <div class="modal-content">
+            <h2>Perguntinha Legal</h2>
+            <p id="quizQuestion">[Pergunta infantil]</p>
+            <div class="quiz-options" id="quizOptions"></div>
+        </div>
+    </div>
+
+    <!-- Modal de Encerramento -->
+    <div class="modal modal-endgame" id="modalEndgame">
+        <div class="modal-content">
+            <h2>Jogo Encerrado</h2>
+            <p>Caos gerado por dados desorganizados!</p>
+        </div>
+    </div>
+
+    <!-- Switch de idiomas (pode ficar no header, se quiser) -->
+    <div class="language-switch">
+        <button data-lang="pt">PT</button>
+        <button data-lang="es">ES</button>
+        <button data-lang="en">EN</button>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo */
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #202124;
+  }
+  
+  /* Cabeçalho estilo Gmail */
+  .gmail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 64px;
+    background-color: #fff;
+    border-bottom: 1px solid #dadce0;
+  }
+  
+  .header-left,
+  .header-center,
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  
+  .gmail-logo {
+    height: 30px;
+  }
+  
+  .search-bar {
+    width: 500px;
+    height: 36px;
+    padding: 0 8px;
+    border: 1px solid #dadce0;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+  }
+  
+  .search-btn {
+    height: 36px;
+    background: #f1f3f4;
+    border: 1px solid #dadce0;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  .header-right .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  /* Abas (Primary, Promotions, Social...) */
+  .gmail-tabs {
+    border-bottom: 1px solid #dadce0;
+    background: #f8f9fa;
+  }
+  
+  .gmail-tabs ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .gmail-tabs li {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: #5f6368;
+  }
+  
+  .gmail-tabs li.active-tab {
+    color: #1967d2;
+    border-bottom: 3px solid #1967d2;
+  }
+  
+  /* Estrutura Principal */
+  .main-container {
+    display: flex;
+    min-height: calc(100vh - 120px); /* Considera cabeçalho + abas */
+  }
+  
+  /* Barra lateral esquerda */
+  .sidebar {
+    width: 240px;
+    border-right: 1px solid #dadce0;
+    padding: 16px 0;
+    background: #fff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background: #f1f3f4;
+  }
+  
+  .sidebar li.active {
+    background: #e8eaed;
+    color: #1967d2;
+    font-weight: bold;
+  }
+  
+  /* Área principal (lista de "e-mails") */
+  .emails-list {
+    flex: 1;
+    background: #fff;
+    padding: 16px;
+  }
+  
+  .link-list {
+    list-style: none;
+  }
+  
+  .link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .link-item:hover {
+    background: #f1f3f4;
+  }
+  
+  .mail-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .sender {
+    font-weight: bold;
+    width: 120px;
+  }
+  
+  .subject-preview {
+    flex: 1;
+    color: #5f6368;
+  }
+  
+  .url {
+    color: #1a73e8;
+  }
+  
+  /* Botões "Seguro"/"Não Seguro" */
+  .actions button {
+    margin: 0 4px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn-safe {
+    background: #34a853;
+    color: #fff;
+  }
+  
+  .btn-unsafe {
+    background: #ea4335;
+    color: #fff;
+  }
+  
+  /* (Opcional) Barra lateral direita */
+  .right-sidebar {
+    width: 200px;
+    border-left: 1px solid #dadce0;
+    padding: 16px;
+  }
+  
+  /* Barra de Pegada de Carbono */
+  .carbon-meter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .carbon-meter img {
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .meter-bar {
+    width: 100px; /* Pode iniciar menor */
+    height: 12px;
+    background: green;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Pop-up “estranho” */
+  .pop-up-error {
+    position: fixed;
+    top: 120px;
+    right: 240px; /* Pode ajustar para não sobrepor sidebar */
+    width: 200px;
+    background: #ffe6e6;
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    display: none; /* Exibido via JS quando erra */
+    z-index: 9999;
+  }
+  
+  /* Modais (Quiz, EndGame) */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+  }
+  
+  .modal .modal-content {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    width: 400px;
+  }
+
+  /* Switch de Idiomas */
+  .language-switch {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .language-switch button {
+    padding: 4px 8px;
+    cursor: pointer;
+  }  
